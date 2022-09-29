@@ -4,17 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <button class="btn" id="test">Click me</button>
-    <button class="btn" id="test1">Click me</button>
+    <h1 id="result"></h1>
+    <label for="firstnumber"> Enter first number</label>
+    <input type="number" name="" id="firstnumber" />
+    <label for="secondnumber"> Enter first number</label>
+    <input type="number" name="" id="secondnumber" />
 
-    <script>
-      document.getElementById("test").addEventListener("click", () => {
-        alert("hii tarique");
-        document.getElementById("test1").style.backgroundColor = "blue";
-      });
-    </script>
+    <div>
+      <button id="add">Add</button>
+      <button id="subtract">Subtract</button>
+      <button id="multiply">Multiply</button>
+      <button id="divide">Divide</button>
+      <button id="Percentage">Percentage</button>
+      <button id="root">Root</button>
+    </div>
+    <h1>To Do List</h1>
+    <div class="container">
+      <input id="inputfield" type="text" /><button id="addtodo">+</button>
+      <div class="to-dos" id="toDoContainer"></div>
+    </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
