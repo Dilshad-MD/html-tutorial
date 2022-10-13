@@ -1,67 +1,52 @@
-var add = document.getElementById('add');
-var subtract = document.getElementById('subtract');
-var multiply = document.getElementById('multiply');
-var divide = document.getElementById('divide');
-var Percentage = document.getElementById('Percentage');
-var root = document.getElementById('root');
+// let arr = [12, 14, 13, 3, 2, 4];
+// let i = 0;
+// let sum = 0;
 
+// //Print Even Number
+// while (i < arr.length) {
+//   if (arr[i] % 2 == 0) {
+//     sum = sum + arr[i];
+//   }
+//   i++;
+// }
+// console.log(sum + "sum of even number ");
 
+// //Print odd Number
+// while (i < arr.length) {
+//   if (arr[i] % 2 != 0) {
+//     sum = sum + arr[i];
+//   }
+//   i++;
+// }
+// console.log(sum + "sum of odd number ");
 
-add.addEventListener('click', () => {
-    var val1 = document.getElementById('firstnumber').value;
-    var val2 = document.getElementById('secondnumber').value;
-    var result = document.getElementById('result');
-    result.innerText = parseInt(val1) + parseInt(val2);
-})
-subtract.addEventListener('click', () => {
-    var val1 = document.getElementById('firstnumber').value;
-    var val2 = document.getElementById('secondnumber').value;
-    var result = document.getElementById('result');
-    result.innerText = parseInt(val1) - parseInt(val2);
-})
-multiply.addEventListener('click', () => {
-    var val1 = document.getElementById('firstnumber').value;
-    var val2 = document.getElementById('secondnumber').value;
-    var result = document.getElementById('result');
-    result.innerText = parseInt(val1) * parseInt(val2);
-})
+// let arr = [8, 2, 3, 4, 5, 6];
 
-divide.addEventListener('click', () => {
-    var val1 = document.getElementById('firstnumber').value;
-    var val2 = document.getElementById('secondnumber').value;
-    var result = document.getElementById('result');
-    result.innerText = parseInt(val1) / parseInt(val2);
-})
+// let avg = arr.reduce((accum, cuurVal, index, arr) => {
+//   let total = (accum += cuurVal);
+//   return total / arr.length;
+// });
 
+// console.log(avg);
+// target
+// let arr = [8, 2, 3, 4, 5, 6];
+// let target = 4;
 
-Percentage.addEventListener('click', () => {
-    var val1 = document.getElementById('firstnumber').value;
-    var val2 = document.getElementById('secondnumber').value;
-    var result = document.getElementById('result');
-    result.innerText = (parseInt(val1) / parseInt(val2)*100);
-})
-
-root.addEventListener('click', () => {
-    var val1 = document.getElementById('firstnumber').value;
-    var result = document.getElementById('result');
-    result.innerText = Math.sqrt(parseInt(val1));
-})
-
-let addtodoButton = document.getElementById('addtodo');
-let todocontainer = document.getElementById('toDoContainer');
-let inputfield = document.getElementById('inputfield');
-
-
-addtodoButton.addEventListener('click', function(){
-    var paragraph = document.createElement('p');
-    paragraph.classList.add('paragraph-styling');
-    paragraph.innerText = inputfield.value;
-    todocontainer.appendChild(paragraph);
-    inputfield.value = "";
-    paragraph.addEventListener('click', function(){
-       
-    })
-    paragraph.addEventListener('dblclick', function(){
-        todocontainer.removeChild(paragraph);
-    })
-})
+// let i = 0;
+// while (i < arr.length) {
+//   if (target === arr[i]) {
+//     console.log("Target found", i, arr[i]);
+//     break;
+//   }
+//   i++;
+// }
+// console.log(arr);
+let arr = [10, 8, 2];
+let sum = 0;
+let i = 0;
+while (sum < arr.length) {
+  console.log((sum += arr[i]));
+  sum = arr[i] + sum;
+}
+console.log("final sum " + sum);
+console.log("avg is " + sum / arr.length);
