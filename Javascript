@@ -1,0 +1,130 @@
+// let arr = [12, 14, 13, 3, 2, 4];
+// let i = 0;
+// let sum = 0;
+
+// //Print Even Number
+// while (i < arr.length) {
+//   if (arr[i] % 2 == 0) {
+//     sum = sum + arr[i];
+//   }
+//   i++;
+// }
+// console.log(sum + "sum of even number ");
+
+// //Print odd Number
+// while (i < arr.length) {
+//   if (arr[i] % 2 != 0) {
+//     sum = sum + arr[i];
+//   }
+//   i++;
+// }
+// console.log(sum + "sum of odd number ");
+
+// let arr = [8, 2, 3, 4, 5, 6];
+
+// let avg = arr.reduce((accum, cuurVal, index, arr) => {
+//   let total = (accum += cuurVal);
+//   return total / arr.length;
+// });
+
+// console.log(avg);
+// target
+// let arr = [8, 2, 3, 4, 5, 6];
+// let target = 4;
+
+// let i = 0;
+// while (i < arr.length) {
+//   if (target === arr[i]) {
+//     console.log("Target found", i, arr[i]);
+//     break;
+//   }
+//   i++;
+// }
+// console.log(arr);
+let arr = [10, 8, 2];
+let sum = 0;
+let i = 0;
+while (sum < arr.length) {
+  console.log((sum += arr[i]));
+  sum = arr[i] + sum;
+}
+console.log("final sum " + sum);
+console.log("avg is " + sum / arr.length);
+
+let a = 10;
+
+if (a === 0) {
+  console.log("zero " + a);
+}
+
+if (a > 0) {
+  console.log("Positive " + a);
+}
+if (a < 0) {
+  console.log("Negetive " + a);
+}
+
+let num1 = 15;
+let operator = "+";
+let num2 = 17;
+
+switch (operator) {
+  case "+":
+    console.log(num1 + num2);
+    break;
+
+  case "-":
+    console.log(num1 - num2);
+    break;
+
+  case "*":
+    console.log(num1 * num2);
+    break;
+
+  case "/":
+    console.log(num1 / num2);
+    break;
+
+  case "%":
+    console.log(num1 % num2);
+    break;
+
+  default:
+    console.log(" invalid Operator");
+}
+
+let vowel = "f";
+
+if (
+  vowel == "a" ||
+  vowel == "e" ||
+  vowel == "i" ||
+  vowel == "o" ||
+  vowel == "u"
+) {
+  console.log("vowel");
+} else {
+  console.log("consonant");
+}
+
+for (let even = 1; even <= 10; even++) {
+  if (even % 2 === 0) {
+    console.log(" Even number", even);
+  }
+}
+
+for (let even = 1; even <= 10; even++) {
+  if (even % 2 != 0) {
+    console.log(even, "Odd number");
+  }
+}
+
+// WAP to print 1 to 10
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+// WAP to print 10 to 1
+for (let i = 10; i >= 1; i--) {
+  console.log(i);
+}
